@@ -40,8 +40,8 @@ class DatabaseInitialValues extends Command
     public function handle()
     {
         try {
-            Artisan::call('db:seed', ['--class' => 'PermissionsTableSeeder', '--force' => true]);
-            Artisan::call('db:seed', ['--class' => 'RolesTableSeeder', '--force' => true]);
+            Artisan::call('db:seed', ['--class' => 'PermissionSeeder', '--force' => true]);
+            Artisan::call('db:seed', ['--class' => 'RolesSeeder', '--force' => true]);
             Artisan::call('db:seed', ['--class' => 'FormFieldLookupSeeder', '--force' => true]);
             Artisan::call('db:seed', ['--class' => 'AdminUsersSeeder', '--force' => true]);
             Artisan::call('db:seed', ['--class' => 'DepartmentSeeder', '--force' => true]);

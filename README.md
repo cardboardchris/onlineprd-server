@@ -56,6 +56,12 @@ Fill in initial database values
 php artisan db:initial-values
 ```
 
+If you want to start out with some dummy data
+
+```
+php artisan db:seed
+```
+
 Create a public passport client (before passport:install)
 
 ```
@@ -73,6 +79,12 @@ Serve the application
 
 ```
 php artisan serve
+```
+
+The virtual server must run on port 8001 for auth to work. To set the port manually, use 
+
+```
+php artisan serve --port=8001
 ```
 
 ## API Endpoints
